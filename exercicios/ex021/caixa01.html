@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+         background-color: lightgray;
+         font-family: 'Times New Roman', Times, serif;
+         margin: 0px;
+        }
+
+        header {
+            background-color: azure;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(236, 187, 122);
+            padding: 10px 10px 10px 10px;
+            box-shadow: 2px 2px 4px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: bisque;
+            font-weight: bold;
+            margin-right: 30px;
+            text-decoration: aliceblue;
+        }
+
+        nav >a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+        }
+
+        article {
+            background-color: rgb(42, 45, 45);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: cadetblue;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            
+              <a href="#">link</a>
+             <a href="#">link</a>
+              <a href="#">link</a>
+    
+         </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam eaque molestias consectetur, commodi nisi harum suscipit explicabo eveniet nemo nam maiores, perspiciatis ipsum magni accusantium perferendis esse modi alias repudiandae!</p>
+                <aside>
+                    <p>artigo escrito por José da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo loucuras</p>
+    </footer>
+</body>
+</html>

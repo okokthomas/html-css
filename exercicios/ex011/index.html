@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir o site em várias telas diferentes, ou apenas diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+    
+    <h1>reproduzindo áudio</h1>
+    <p>vamos pôr o áudio para ser reproduzido em HTML5</p>
+    <audio src="midia/kiss the heavens-asher fulero.mp3" controls autoplay <!--autoplay é para caso você queira que toque sozinho.--> ></audio>
+    <audio preload="auto" autoplay>
+        <source src="midia/kiss the heavens-asher  fulero.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
