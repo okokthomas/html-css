@@ -7,9 +7,9 @@
     <title>Media Query</title>
     <link  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
-    
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -28,18 +28,25 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>ijdwqjidjiqwfijqwfjwfwkfjkejkcnencnencwenjcnenjcnjwenvjnejvnjwenvjknewjcnjencjwncnjwencwnjecnwenjcnwevnwnievniwejvwevwvwenjwefkfjwjiqojdioqjiodjiqowjcwjiocjiowejicwjeifcfjoiweocijwjecweicjwjeiwefoijwejfiowjiefjiwejiowjoieoiwejoijwioevjiowejoivjiwoevwjioevjiowejivowjoievjoiwejiovjiwoejvowjeio</p>
-            <p>ijdwqjidjiqwfijqwfjwfwkfjkejkcnencnencwenjcnenjcnjwenvjnejvnjwenvjknewjcnjencjwncnjwencwnjecnwenjcnwevnwnievniwejvwevwvwenjwefkfjwjiqojdioqjiodjiqowjcwjiocjiowejicwjeifcfjoiweocijwjecweicjwjeiwefoijwejfiowjiefjiwejiowjoieoiwejoijwioevjiowejoivjiwoevwjioevjiowejivowjoievjoiwejiovjiwoejvowjeio</p>
-            <p>ijdwqjidjiqwfijqwfjwfwkfjkejkcnencnencwenjcnenjcnjwenvjnejvnjwenvjknewjcnjencjwncnjwencwnjecnwenjcnwevnwnievniwejvwevwvwenjwefkfjwjiqojdioqjiodjiqowjcwjiocjiowejicwjeifcfjoiweocijwjecweicjwjeiwefoijwejfiowjiefjiwejiowjoieoiwejoijwioevjiowejoivjiwoevwjioevjiowejivowjoievjoiwejiovjiwoejvowjeio</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem obcaecati dolorem repellat id saepe et iusto a eos reiciendis? Accusantium quia labore facilis reiciendis amet! Dicta rem at tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor unde perferendis dolorum totam maxime. Fuga sequi tenetur ratione eius? Assumenda asperiores pariatur ab odit magnam nemo cupiditate accusantium ipsum voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, a blanditiis temporibus ea ab tenetur recusandae omnis itaque! Beatae debitis hic, quis magni voluptate ea eum repellat ut enim similique!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos doloribus nam incidunt commodi perferendis nemo esse deleniti optio debitis soluta velit cupiditate perspiciatis, earum possimus! Magni veniam quidem enim iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis odit nesciunt pariatur officia et earum saepe? Sint tempore ex, fugiat earum maiores eum itaque odit est. Tenetur, magni! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iste molestias rerum quia, animi a aperiam est illum neque exercitationem maiores soluta quas magnam? Facere totam labore suscipit placeat asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi veniam neque? Fugiat, tempora quidem. Architecto a deleniti repellendus quas veritatis fugit aliquam vel, corporis molestias, totam culpa repudiandae quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore velit earum praesentium consequuntur repudiandae quae obcaecati labore cupiditate possimus dolorem facilis, aspernatur rerum repellat magnam maiores sed? Sunt, nesciunt quas?</p>
         </article>
     </main>
 
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                selecao.style.display = 'block'
+            }
+        }
+
         function clickMenu() {
             if (selecao.style.display == 'block') {
                 selecao.style.display = 'none'
             } else {
-                selecao.style.display
+                selecao.style.display = 'block'
             }
         }
     </script>

@@ -52,7 +52,7 @@ menu > ul > li > a {
     border-top: 2px solid gray;
 }
 
-menu > ul > li a:hover {
+menu > ul > li > a:hover {
     background-color: gray;
 }
 
